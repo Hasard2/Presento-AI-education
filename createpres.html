@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="ru" name="pres" id="pres" class="pres">
+    <head>
+        <!--Имя Сайта-->
+        <title>Создание презентации</title>
+        <meta charset="UTF-8" /><!--Кодировка UTF-8-->
+        <!--подключение css-->
+        <link rel="stylesheet" href="static/style/styles.css" type="text/css"/>
+    </head>
+    <body>
+        <header>
+            <div class="nav-container" >
+                <nav>
+                    <ul>
+                        <li><a href="#">Личный Кабинет</a></li>
+                        <li><a href="#" >Шаблоны</a></li>
+                    </ul>
+                </nav>
+                <img src="logo.png" alt="логотип генератора" width="100" height="100" align="left">
+            </div>
+        </header> 
+        <hr>
+        <div>
+            <div>
+                <figure style="display: inline-block;" align="center">
+                    <div class="title"><strong>Название</strong></div><!--имя проекта-->
+                    <input type="text" name="name_project" id="name_project" class="button" value="Презентация Presento-AI">
+                </figure>
+                <figure style="display: inline-block;" align="center">
+                    <div class="title"><strong>Ваше имя</strong></div><!--имя пользователя-->
+                    <input type="text" name="name_user" id="name_user" class="button" value="Presento-AI">
+                </figure>
+            </div>
+        </div>
+        <div style="margin-top: 25px;" align="justify">
+            <div>
+                <form method="post" name="export" id="export">
+                    <div class="title"><strong>Содержание презентации</strong></div>
+                    <!--кнопки-->
+                    <button type="submit" class="button">Экспортировать</button><!--экспорт проекта-->
+                    <input type="color" class="button" id="color" name="color" value="#FFFFFF"><!--выбор цветов-->
+                    <select class="button" name="examplesb" id="examplesb"><!--выбор шаблонов-->
+                        <option name="examples" id="examples" value="0" selected disabled>Шаблоны</option>
+                        <option name="examples" id="examples" value="1">Департамент строительства</option>
+                        <option name="examples" id="examples" value="2">Аппарат Правительства</option>
+                        <option name="examples" id="examples" value="3">3</option>
+                        <option name="examples" id="examples" value="4">4</option>
+                        <option name="examples" id="examples" value="5">5</option>
+                        <option name="examples" id="examples" value="6">6</option>
+                        <option name="examples" id="examples" value="7">7</option>
+                        <option name="examples" id="examples" value="8">8</option>
+                        <option name="examples" id="examples" value="9">9</option>
+                    </select>
+                </form>
+            </div> 
+            <div>
+                <iframe src="static/frames/frameprompt.html" frameborder="0" class="prompt" id="prompt" name="prompt" oninput="createelement()"></iframe><!--поле для ввода текста-->
+            </div>
+            <div>
+                <form name="reset" id="reset">
+                    <!--кнопка очистки-->
+                    <button type="reset" name="reset" class="button">Стереть</button>
+                    <script src="static/js/javascript.js"></script><!--подключение js-->
+                </form>
+            </div>  
+        </div>
+    </body>
+</html>
