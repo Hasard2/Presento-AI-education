@@ -1,0 +1,24 @@
+.nav-container {
+    display: flex;
+    justify-content: space-between;   
+    align-items: center;
+}
+
+.nav-container>nav>ul {
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+}
+
+.nav-container>nav>ul>li>a {
+    
+    display: block;
+    padding: 10px;
+    border-style:double;
+    border-width: 0.5px;
+    border-radius: 50px;
+    background: rgb(80, 80, 80);
+    color: rgb(255, 255, 255);
+}
